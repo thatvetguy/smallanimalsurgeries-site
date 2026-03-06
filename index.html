@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Small Animal Surgeries, Inc</title>
+  <meta name="description" content="Veterinary software solutions built from real clinical experience. Apps for pet owners, veterinary professionals, and independent contractors.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/pettoxicLogo.png">
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="section-inner">
+      <h1>Small Animal Surgeries, Inc</h1>
+      <p class="tagline">Veterinary insight, delivered through software.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">About</h2>
+      <p class="about-text">
+        Small Animal Surgeries, Inc was founded by a veterinarian with experience spanning primary care and emergency medicine. Through years of clinical practice, real-world gaps in the tools available to veterinary professionals and independent contractors became impossible to ignore. That firsthand understanding of daily challenges led to the development of focused, purpose-built software solutions. The mission is simple: turn clinical experience into tools that genuinely help.
+      </p>
+    </div>
+  </section>
+
+  <!-- Apps -->
+  <section class="apps" id="apps">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">Our Apps</h2>
+      <p class="section-subtitle fade-in">Purpose-built tools for veterinary professionals and beyond.</p>
+
+      <div class="apps-grid">
+
+        <!-- Pet Toxic -->
+        <div class="app-card fade-in">
+          <div class="app-card-header">
+            <img src="images/pettoxicLogo.png" alt="Pet Toxic icon" class="app-icon">
+            <h3>Pet Toxic</h3>
+          </div>
+          <div class="app-card-body">
+            <p class="app-description">A toxicity reference app for pet owners and veterinary professionals. Quickly look up toxic substances for dogs and cats, with severity ratings and clinical guidance.</p>
+            <div class="screenshot-gallery">
+              <img src="images/pettoxic1.PNG" alt="Pet Toxic screenshot 1">
+              <img src="images/pettoxic2.PNG" alt="Pet Toxic screenshot 2">
+              <img src="images/pettoxic3.PNG" alt="Pet Toxic screenshot 3">
+            </div>
+            <div class="app-actions">
+              <a href="https://pettoxic.com" class="btn btn-primary" target="_blank" rel="noopener">Visit pettoxic.com</a>
+              <a href="https://apps.apple.com/us/app/pet-toxic/id6758074515" class="btn btn-secondary" target="_blank" rel="noopener">Download on the App Store</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1099Work Ledger -->
+        <div class="app-card fade-in">
+          <div class="app-card-header">
+            <img src="images/1099Logo1.png" alt="1099Work Ledger icon" class="app-icon">
+            <h3>1099Work Ledger</h3>
+          </div>
+          <div class="app-card-body">
+            <p class="app-description">A business management app built for 1099 independent contractors. Handles shift scheduling, invoicing, expense tracking, mileage logging, and financial reporting — without the complexity or cost of traditional accounting software.</p>
+            <div class="screenshot-gallery">
+              <img src="images/1099wl1.png" alt="1099Work Ledger screenshot 1">
+              <img src="images/1099wl2.png" alt="1099Work Ledger screenshot 2">
+              <img src="images/1099wl3.png" alt="1099Work Ledger screenshot 3">
+            </div>
+            <div class="app-actions">
+              <span class="btn btn-coming-soon">Coming Soon to the App Store</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pet Toxic: Equine Edition -->
+        <div class="app-card fade-in">
+          <div class="app-card-header">
+            <img src="images/ptequineLogo.png" alt="Pet Toxic Equine Edition icon" class="app-icon">
+            <h3>Pet Toxic: Equine Edition</h3>
+          </div>
+          <div class="app-card-body">
+            <p class="app-description">A toxicity reference focused exclusively on equines — horses, ponies, and related species. Currently in development.</p>
+            <div class="screenshot-gallery">
+              <img src="images/ptequine1.PNG" alt="Pet Toxic Equine screenshot 1">
+              <img src="images/ptequine2.PNG" alt="Pet Toxic Equine screenshot 2">
+              <img src="images/ptequine3.PNG" alt="Pet Toxic Equine screenshot 3">
+            </div>
+            <div class="app-actions">
+              <span class="btn btn-coming-soon">Coming Soon to the App Store</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">Contact</h2>
+      <p>For app-related inquiries, reach out at <a href="mailto:support@smallanimalsurgeries.com">support@smallanimalsurgeries.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <span>&copy; 2026 Small Animal Surgeries, Inc</span>
+      <a href="https://1099work.net/privacy" target="_blank" rel="noopener">1099Work Ledger Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
