@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Small Animal Surgeries, Inc</title>
   <meta name="description" content="Purpose-built mobile apps for professionals and students — veterinary references, clinical calculators, business tools for independent contractors, and study guides.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="images/pettoxicLogo.png">
 </head>
@@ -12,9 +15,18 @@
 
   <!-- Hero -->
   <section class="hero">
+    <div class="hero-blob" aria-hidden="true"></div>
     <div class="section-inner">
       <h1>Small Animal Surgeries, Inc</h1>
-      <p class="tagline">Purpose-built software for professionals and students.</p>
+      <p class="hero-pull">Purpose-built software for professionals and students.</p>
+      <p class="hero-signature">Built by a veterinarian who kept hitting the same gaps.</p>
+      <div class="hero-apps" aria-hidden="true">
+        <img class="hero-icon" src="images/pettoxicLogo.png" alt="">
+        <img class="hero-icon" src="images/ptequineLogo.png" alt="">
+        <img class="hero-icon" src="images/vetricsLogo.png" alt="">
+        <img class="hero-icon" src="images/apesprepLogo.png" alt="">
+        <img class="hero-icon" src="images/1099Logo1.png" alt="">
+      </div>
     </div>
   </section>
 
@@ -34,8 +46,8 @@
       <h2 class="section-title fade-in">Our Apps</h2>
       <p class="section-subtitle fade-in">Clinical references, calculators, business tools, and study guides.</p>
 
-      <!-- Available Now -->
-      <h3 class="apps-subsection-title fade-in">Available Now</h3>
+      <!-- Veterinary -->
+      <h3 class="apps-subsection-title fade-in">Veterinary</h3>
       <div class="apps-grid">
 
         <!-- Pet Toxic -->
@@ -43,6 +55,7 @@
           <div class="app-card-header">
             <img src="images/pettoxicLogo.png" alt="Pet Toxic icon" class="app-icon">
             <h3>Pet Toxic</h3>
+            <span class="status-badge available">Available</span>
           </div>
           <div class="app-card-body">
             <p class="app-description">A toxicity reference app for pet owners and veterinary professionals. Quickly look up toxic substances for dogs and cats, with severity ratings and clinical guidance.</p>
@@ -65,6 +78,7 @@
           <div class="app-card-header">
             <img src="images/ptequineLogo.png" alt="Pet Toxic: Equine Edition icon" class="app-icon">
             <h3>Pet Toxic: Equine Edition</h3>
+            <span class="status-badge available">Available</span>
           </div>
           <div class="app-card-body">
             <p class="app-description">A toxicity reference focused exclusively on equines — horses, ponies, and related species. Severity ratings and clinical guidance tailored for horse owners and equine veterinary professionals.</p>
@@ -81,11 +95,37 @@
           </div>
         </div>
 
+        <!-- Vetrics -->
+        <div class="app-card fade-in">
+          <div class="app-card-header">
+            <img src="images/vetricsLogo.png" alt="Vetrics icon" class="app-icon">
+            <h3>Vetrics</h3>
+            <span class="status-badge coming-soon">Coming Soon</span>
+          </div>
+          <div class="app-card-body">
+            <p class="app-description">Designed for veterinarians and veterinary technicians to streamline medical calculations, including a CPR Code Runner feature. Calculations can be saved and exported as PDF for record keeping.</p>
+            <div class="screenshot-gallery">
+              <img src="images/vetrics-01.png" alt="Vetrics home screen">
+              <img src="images/vetrics-02.png" alt="Vetrics Code Runner">
+              <img src="images/vetrics-03.png" alt="Vetrics CRI calculator">
+              <img src="images/vetrics-04.png" alt="Vetrics CRI detail">
+              <img src="images/vetrics-05.png" alt="Vetrics PDF export">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education & Business -->
+      <h3 class="apps-subsection-title fade-in">Education &amp; Business</h3>
+      <div class="apps-grid apps-grid--pair">
+
         <!-- APES Prep -->
         <div class="app-card fade-in">
           <div class="app-card-header">
             <img src="images/apesprepLogo.png" alt="APES Prep icon" class="app-icon">
             <h3>APES Prep</h3>
+            <span class="status-badge available">Available</span>
           </div>
           <div class="app-card-body">
             <p class="app-description">A free, offline study app for AP Environmental Science. 270 multiple choice questions, 36 free response questions, 180 flashcards, and timed practice exams covering all 9 College Board units.</p>
@@ -98,21 +138,17 @@
             </div>
             <div class="app-actions">
               <a href="https://apps.apple.com/us/app/apes-prep/id6761887254" class="btn btn-primary" target="_blank" rel="noopener">App Store</a>
+              <a href="https://play.google.com/store/apps/details?id=com.crisfontes.apesprep" class="btn btn-secondary" target="_blank" rel="noopener">Google Play</a>
             </div>
           </div>
         </div>
-
-      </div>
-
-      <!-- Coming Soon -->
-      <h3 class="apps-subsection-title fade-in">Coming Soon</h3>
-      <div class="apps-grid">
 
         <!-- 1099Work Ledger -->
         <div class="app-card fade-in">
           <div class="app-card-header">
             <img src="images/1099Logo1.png" alt="1099Work Ledger icon" class="app-icon">
             <h3>1099Work Ledger</h3>
+            <span class="status-badge coming-soon">Coming Soon</span>
           </div>
           <div class="app-card-body">
             <p class="app-description">A business management app built for 1099 independent contractors. Handles shift scheduling, invoicing, expense tracking, mileage logging, and financial reporting — without the complexity or cost of traditional accounting software.</p>
@@ -123,30 +159,6 @@
               <img src="images/1099wl-04.png" alt="1099Work Ledger reports">
               <img src="images/1099wl-05.png" alt="1099Work Ledger schedule">
               <img src="images/1099wl-06.png" alt="1099Work Ledger settings">
-            </div>
-            <div class="app-actions">
-              <span class="btn btn-coming-soon">Coming Soon to the App Store</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Vetrics -->
-        <div class="app-card fade-in">
-          <div class="app-card-header">
-            <img src="images/vetricsLogo.png" alt="Vetrics icon" class="app-icon">
-            <h3>Vetrics</h3>
-          </div>
-          <div class="app-card-body">
-            <p class="app-description">Designed for veterinarians and veterinary technicians to streamline medical calculations, including a CPR Code Runner feature. Calculations can be saved and exported as PDF for record keeping.</p>
-            <div class="screenshot-gallery">
-              <img src="images/vetrics-01.png" alt="Vetrics home screen">
-              <img src="images/vetrics-02.png" alt="Vetrics Code Runner">
-              <img src="images/vetrics-03.png" alt="Vetrics CRI calculator">
-              <img src="images/vetrics-04.png" alt="Vetrics CRI detail">
-              <img src="images/vetrics-05.png" alt="Vetrics PDF export">
-            </div>
-            <div class="app-actions">
-              <span class="btn btn-coming-soon">Coming Soon</span>
             </div>
           </div>
         </div>
