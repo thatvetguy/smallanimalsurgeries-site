@@ -4,187 +4,256 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Small Animal Surgeries, Inc</title>
-  <meta name="description" content="Purpose-built mobile apps for professionals and students — veterinary references, clinical calculators, business tools for independent contractors, and study guides.">
+  <meta name="description" content="Useful mobile apps built by a veterinarian for clinical reference, student practice, contractor workflows, and everyday professional gaps.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260512">
   <link rel="icon" type="image/png" href="images/pettoxicLogo.png">
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Small Animal Surgeries home">
+      <span class="brand-mark">SASI</span>
+      <span>Small Animal Surgeries, Inc</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#apps">Apps</a>
+      <a href="#principles">Principles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-blob" aria-hidden="true"></div>
-    <div class="section-inner">
-      <h1>Small Animal Surgeries, Inc</h1>
-      <p class="hero-pull">Purpose-built software for professionals and students.</p>
-      <p class="hero-signature">Built by a veterinarian who kept hitting the same gaps.</p>
-      <div class="hero-apps" aria-hidden="true">
-        <img class="hero-icon" src="images/pettoxicLogo.png" alt="">
-        <img class="hero-icon" src="images/ptequineLogo.png" alt="">
-        <img class="hero-icon" src="images/vetricsLogo.png" alt="">
-        <img class="hero-icon" src="images/apesprepLogo.png" alt="">
-        <img class="hero-icon" src="images/1099Logo1.png" alt="">
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy fade-in">
+          <p class="eyebrow">Veterinarian-built software studio</p>
+          <h1>Useful apps for real shifts, study sessions, and solo work.</h1>
+          <p class="hero-lede">
+            Small Animal Surgeries, Inc publishes focused mobile tools for veterinary reference, classroom practice, contractor admin, and the everyday gaps that keep showing up in real life.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#apps">Explore apps</a>
+            <a class="btn btn-secondary" href="mailto:support@smallanimalsurgeries.com">Contact support</a>
+          </div>
+        </div>
+
+        <div class="hero-showcase fade-in" aria-label="App screenshots">
+          <img class="phone-shot phone-shot-primary" src="images/pettoxic-01.png" alt="Pet Toxic app home screen">
+          <img class="phone-shot phone-shot-secondary" src="images/vetrics-02.png" alt="Vetrics CPR Code Runner screen">
+          <img class="phone-shot phone-shot-tertiary" src="images/apesprep-03.png" alt="APES Prep practice screen">
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About -->
-  <section class="about" id="about">
-    <div class="section-inner fade-in">
-      <h2 class="section-title">About</h2>
-      <p class="about-text">
-        Small Animal Surgeries, Inc was founded by a veterinarian with experience spanning primary care and emergency medicine. Through years of clinical practice, real-world gaps in the tools available to veterinary professionals and independent contractors became impossible to ignore. That firsthand understanding of daily challenges led to the development of focused, purpose-built software solutions. The mission is simple: turn clinical experience into tools that genuinely help.
-      </p>
-    </div>
-  </section>
-
-  <!-- Apps -->
-  <section class="apps" id="apps">
-    <div class="section-inner">
-      <h2 class="section-title fade-in">Our Apps</h2>
-      <p class="section-subtitle fade-in">Clinical references, calculators, business tools, and study guides.</p>
-
-      <!-- Veterinary -->
-      <h3 class="apps-subsection-title fade-in">Veterinary</h3>
-      <div class="apps-grid">
-
-        <!-- Pet Toxic -->
-        <div class="app-card fade-in">
-          <div class="app-card-header">
-            <img src="images/pettoxicLogo.png" alt="Pet Toxic icon" class="app-icon">
-            <h3>Pet Toxic</h3>
-            <span class="status-badge available">Available</span>
+    <section class="founder" id="about">
+      <div class="section-inner founder-grid">
+        <div class="founder-copy fade-in">
+          <p class="eyebrow">Veterinarian-built</p>
+          <h2 class="section-title">A small studio with clinic-floor instincts.</h2>
+          <p>
+            Small Animal Surgeries, Inc was founded by a small animal veterinarian with emergency practice experience and a habit of building practical mobile tools. The company name started in veterinary medicine, but the portfolio has grown into a toolkit for students, clinicians, and independent workers.
+          </p>
+        </div>
+        <div class="cred-list fade-in" aria-label="Founder background">
+          <div class="cred-item">
+            <span>01</span>
+            <strong>Emergency practice perspective</strong>
+            <p>Products are shaped by the pressure, speed, and ambiguity of real clinical work.</p>
           </div>
-          <div class="app-card-body">
-            <p class="app-description">A toxicity reference app for pet owners and veterinary professionals. Quickly look up toxic substances for dogs and cats, with severity ratings and clinical guidance.</p>
-            <div class="screenshot-gallery">
-              <img src="images/pettoxic-01.png" alt="Pet Toxic home screen">
-              <img src="images/pettoxic-02.png" alt="Pet Toxic browse screen">
-              <img src="images/pettoxic-03.png" alt="Pet Toxic foods screen">
-              <img src="images/pettoxic-04.png" alt="Pet Toxic emergency screen">
-            </div>
-            <div class="app-actions">
-              <a href="https://pettoxic.com" class="btn btn-primary" target="_blank" rel="noopener">Visit pettoxic.com</a>
-              <a href="https://apps.apple.com/us/app/pet-toxic/id6758074515" class="btn btn-secondary" target="_blank" rel="noopener">App Store</a>
-              <a href="https://play.google.com/store/apps/details?id=com.pettoxic.android" class="btn btn-secondary" target="_blank" rel="noopener">Google Play</a>
-            </div>
+          <div class="cred-item">
+            <span>02</span>
+            <strong>Solo-builder focus</strong>
+            <p>Small, direct tools with clear jobs instead of bloated platforms.</p>
+          </div>
+          <div class="cred-item">
+            <span>03</span>
+            <strong>Privacy-conscious defaults</strong>
+            <p>Many apps are designed to work offline and avoid unnecessary account friction.</p>
           </div>
         </div>
-
-        <!-- Pet Toxic: Equine Edition -->
-        <div class="app-card fade-in">
-          <div class="app-card-header">
-            <img src="images/ptequineLogo.png" alt="Pet Toxic: Equine Edition icon" class="app-icon">
-            <h3>Pet Toxic: Equine Edition</h3>
-            <span class="status-badge available">Available</span>
-          </div>
-          <div class="app-card-body">
-            <p class="app-description">A toxicity reference focused exclusively on equines — horses, ponies, and related species. Severity ratings and clinical guidance tailored for horse owners and equine veterinary professionals.</p>
-            <div class="screenshot-gallery">
-              <img src="images/ptequine-01.png" alt="Pet Toxic Equine home screen">
-              <img src="images/ptequine-02.png" alt="Pet Toxic Equine browse screen">
-              <img src="images/ptequine-03.png" alt="Pet Toxic Equine forage screen">
-              <img src="images/ptequine-04.png" alt="Pet Toxic Equine emergency screen">
-            </div>
-            <div class="app-actions">
-              <a href="https://apps.apple.com/us/app/pet-toxic-equine-edition/id6759298291" class="btn btn-primary" target="_blank" rel="noopener">App Store</a>
-              <a href="https://play.google.com/store/apps/details?id=com.pettoxic.equine" class="btn btn-secondary" target="_blank" rel="noopener">Google Play</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Vetrics -->
-        <div class="app-card fade-in">
-          <div class="app-card-header">
-            <img src="images/vetricsLogo.png" alt="Vetrics icon" class="app-icon">
-            <h3>Vetrics</h3>
-            <span class="status-badge coming-soon">Coming Soon</span>
-          </div>
-          <div class="app-card-body">
-            <p class="app-description">Designed for veterinarians and veterinary technicians to streamline medical calculations, including a CPR Code Runner feature. Calculations can be saved and exported as PDF for record keeping.</p>
-            <div class="screenshot-gallery">
-              <img src="images/vetrics-01.png" alt="Vetrics home screen">
-              <img src="images/vetrics-02.png" alt="Vetrics Code Runner">
-              <img src="images/vetrics-03.png" alt="Vetrics CRI calculator">
-              <img src="images/vetrics-04.png" alt="Vetrics CRI detail">
-              <img src="images/vetrics-05.png" alt="Vetrics PDF export">
-            </div>
-          </div>
-        </div>
-
       </div>
+    </section>
 
-      <!-- Education & Business -->
-      <h3 class="apps-subsection-title fade-in">Education &amp; Business</h3>
-      <div class="apps-grid apps-grid--pair">
+    <section class="apps" id="apps">
+      <div class="section-inner">
+        <div class="section-heading fade-in">
+          <p class="eyebrow">Portfolio</p>
+          <h2 class="section-title">Apps for moments when a better tool should already exist.</h2>
+          <p class="section-subtitle">Grouped by the people and workflows they serve.</p>
+        </div>
 
-        <!-- APES Prep -->
-        <div class="app-card fade-in">
-          <div class="app-card-header">
-            <img src="images/apesprepLogo.png" alt="APES Prep icon" class="app-icon">
-            <h3>APES Prep</h3>
-            <span class="status-badge available">Available</span>
+        <div class="app-family fade-in">
+          <div class="family-heading">
+            <p class="eyebrow">For Veterinary Care</p>
+            <h3>Fast references and calculators for clinical contexts.</h3>
           </div>
-          <div class="app-card-body">
-            <p class="app-description">A free, offline study app for AP Environmental Science. 270 multiple choice questions, 36 free response questions, 180 flashcards, and timed practice exams covering all 9 College Board units.</p>
-            <div class="screenshot-gallery">
+          <div class="product-grid product-grid-three">
+            <article class="product-card accent-teal">
+              <div class="product-header">
+                <img src="images/pettoxicLogo.png" alt="Pet Toxic icon" class="app-icon">
+                <div>
+                  <h4>Pet Toxic</h4>
+                  <span class="status-badge available">Available</span>
+                </div>
+              </div>
+              <p class="product-line">Offline toxicity lookup for stressful small animal moments.</p>
+              <div class="screenshot-row">
+                <img src="images/pettoxic-01.png" alt="Pet Toxic home screen">
+                <img src="images/pettoxic-02.png" alt="Pet Toxic browse screen">
+                <img src="images/pettoxic-04.png" alt="Pet Toxic emergency screen">
+              </div>
+              <div class="app-actions">
+                <a href="https://pettoxic.com" class="btn btn-primary" target="_blank" rel="noopener">Visit site</a>
+                <a href="https://apps.apple.com/us/app/pet-toxic/id6758074515" class="btn btn-secondary" target="_blank" rel="noopener">App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.pettoxic.android" class="btn btn-secondary" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </article>
+
+            <article class="product-card accent-gold">
+              <div class="product-header">
+                <img src="images/ptequineLogo.png" alt="Pet Toxic: Equine Edition icon" class="app-icon">
+                <div>
+                  <h4>Pet Toxic: Equine Edition</h4>
+                  <span class="status-badge available">Available</span>
+                </div>
+              </div>
+              <p class="product-line">Equine-focused toxicology reference for horses, ponies, and related species.</p>
+              <div class="screenshot-row">
+                <img src="images/ptequine-01.png" alt="Pet Toxic Equine home screen">
+                <img src="images/ptequine-02.png" alt="Pet Toxic Equine browse screen">
+                <img src="images/ptequine-03.png" alt="Pet Toxic Equine forage screen">
+              </div>
+              <div class="app-actions">
+                <a href="https://apps.apple.com/us/app/pet-toxic-equine-edition/id6759298291" class="btn btn-primary" target="_blank" rel="noopener">App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.pettoxic.equine" class="btn btn-secondary" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </article>
+
+            <article class="product-card accent-navy">
+              <div class="product-header">
+                <img src="images/vetricsLogo.png" alt="Vetrics icon" class="app-icon">
+                <div>
+                  <h4>Vetrics</h4>
+                  <span class="status-badge coming-soon">Coming Soon</span>
+                </div>
+              </div>
+              <p class="product-line">Veterinary calculators, CPR Code Runner, and exportable records for clinical math.</p>
+              <div class="screenshot-row">
+                <img src="images/vetrics-01.png" alt="Vetrics home screen">
+                <img src="images/vetrics-02.png" alt="Vetrics Code Runner screen">
+                <img src="images/vetrics-05.png" alt="Vetrics PDF export screen">
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="app-family fade-in">
+          <div class="family-heading">
+            <p class="eyebrow">For Students</p>
+            <h3>Focused practice without accounts, ads, or noise.</h3>
+          </div>
+          <article class="feature-card accent-green">
+            <div class="feature-copy">
+              <div class="product-header">
+                <img src="images/apesprepLogo.png" alt="APES Prep icon" class="app-icon">
+                <div>
+                  <h4>APES Prep</h4>
+                  <span class="status-badge available">Available</span>
+                </div>
+              </div>
+              <p class="product-line">A free AP Environmental Science study app with MCQ, FRQ, flashcards, and timed exams across all 9 College Board units.</p>
+              <div class="app-actions">
+                <a href="https://apps.apple.com/us/app/apes-prep/id6761887254" class="btn btn-primary" target="_blank" rel="noopener">App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.crisfontes.apesprep" class="btn btn-secondary" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </div>
+            <div class="feature-screens">
               <img src="images/apesprep-01.png" alt="APES Prep home screen">
-              <img src="images/apesprep-02.png" alt="APES Prep learn screen">
               <img src="images/apesprep-03.png" alt="APES Prep practice screen">
               <img src="images/apesprep-04.png" alt="APES Prep exam screen">
-              <img src="images/apesprep-05.png" alt="APES Prep settings screen">
             </div>
-            <div class="app-actions">
-              <a href="https://apps.apple.com/us/app/apes-prep/id6761887254" class="btn btn-primary" target="_blank" rel="noopener">App Store</a>
-              <a href="https://play.google.com/store/apps/details?id=com.crisfontes.apesprep" class="btn btn-secondary" target="_blank" rel="noopener">Google Play</a>
-            </div>
-          </div>
+          </article>
         </div>
 
-        <!-- 1099Work Ledger -->
-        <div class="app-card fade-in">
-          <div class="app-card-header">
-            <img src="images/1099Logo1.png" alt="1099Work Ledger icon" class="app-icon">
-            <h3>1099Work Ledger</h3>
-            <span class="status-badge coming-soon">Coming Soon</span>
+        <div class="app-family fade-in">
+          <div class="family-heading">
+            <p class="eyebrow">For Independent Work</p>
+            <h3>Administrative tools for solo professionals.</h3>
           </div>
-          <div class="app-card-body">
-            <p class="app-description">A business management app built for 1099 independent contractors. Handles shift scheduling, invoicing, expense tracking, mileage logging, and financial reporting — without the complexity or cost of traditional accounting software.</p>
-            <div class="screenshot-gallery">
+          <article class="feature-card feature-card-reverse accent-blue">
+            <div class="feature-copy">
+              <div class="product-header">
+                <img src="images/1099Logo1.png" alt="1099Work Ledger icon" class="app-icon">
+                <div>
+                  <h4>1099Work Ledger</h4>
+                  <span class="status-badge coming-soon">Coming Soon</span>
+                </div>
+              </div>
+              <p class="product-line">Shift scheduling, invoices, expenses, mileage, tax reminders, and profit-and-loss reporting for 1099 contractors.</p>
+            </div>
+            <div class="feature-screens">
               <img src="images/1099wl-01.png" alt="1099Work Ledger dashboard">
-              <img src="images/1099wl-02.png" alt="1099Work Ledger invoices">
-              <img src="images/1099wl-03.png" alt="1099Work Ledger expenses">
-              <img src="images/1099wl-04.png" alt="1099Work Ledger reports">
-              <img src="images/1099wl-05.png" alt="1099Work Ledger schedule">
-              <img src="images/1099wl-06.png" alt="1099Work Ledger settings">
+              <img src="images/1099wl-02.png" alt="1099Work Ledger invoices screen">
+              <img src="images/1099wl-04.png" alt="1099Work Ledger reports screen">
             </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles" id="principles">
+      <div class="section-inner">
+        <div class="section-heading fade-in">
+          <p class="eyebrow">Operating Principles</p>
+          <h2 class="section-title">Practical first. Polished because it matters.</h2>
+        </div>
+        <div class="principle-grid">
+          <div class="principle fade-in">
+            <span>Offline where it matters</span>
+            <p>Reference and study tools should keep working in clinics, barns, schools, and bad Wi-Fi.</p>
+          </div>
+          <div class="principle fade-in">
+            <span>Clear boundaries</span>
+            <p>Veterinary apps inform and organize; they do not replace veterinary care or prescribe treatment.</p>
+          </div>
+          <div class="principle fade-in">
+            <span>Small enough to care</span>
+            <p>Each product is built around a specific job, then refined until the common path feels fast.</p>
+          </div>
+          <div class="principle fade-in">
+            <span>Privacy by restraint</span>
+            <p>Collect less, ask for less, and avoid accounts unless they genuinely help the user.</p>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <div class="section-inner fade-in">
-      <h2 class="section-title">Contact</h2>
-      <p>For app-related inquiries, reach out at <a href="mailto:support@smallanimalsurgeries.com">support@smallanimalsurgeries.com</a></p>
-    </div>
-  </section>
+    <section class="contact" id="contact">
+      <div class="section-inner contact-panel fade-in">
+        <p class="eyebrow">Support</p>
+        <h2 class="section-title">Need help with an app?</h2>
+        <p>For app-related inquiries, support, or store-listing questions, reach out at <a href="mailto:support@smallanimalsurgeries.com">support@smallanimalsurgeries.com</a>.</p>
+      </div>
+    </section>
+  </main>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-inner">
-      <span>&copy; 2026 Small Animal Surgeries, Inc</span>
-      <a href="https://1099work.net/privacy" target="_blank" rel="noopener">1099Work Ledger Privacy Policy</a>
+      <div>
+        <strong>Small Animal Surgeries, Inc</strong>
+        <span>&copy; 2026 · Published by Small Animal Surgeries Inc</span>
+      </div>
+      <div class="footer-links">
+        <a href="#apps">Apps</a>
+        <a href="mailto:support@smallanimalsurgeries.com">Support</a>
+        <a href="https://1099work.net/privacy" target="_blank" rel="noopener">Privacy</a>
+      </div>
     </div>
   </footer>
 
   <script>
-    // Fade-in on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -195,6 +264,5 @@
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
-
 </body>
 </html>
