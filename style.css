@@ -813,3 +813,86 @@ footer span {
     border-radius: 12px;
   }
 }
+
+/* ---- Launch announcement pill + privacy hub (added 2026-07-11, Vetrics launch) ---- */
+.launch-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 20px 7px 7px;
+  font-size: 0.95rem;
+  color: var(--ink);
+  text-decoration: none;
+  margin-bottom: 22px;
+  box-shadow: 0 6px 18px rgba(23, 37, 32, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.launch-pill:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(23, 37, 32, 0.12);
+}
+
+.launch-pill .pill-tag {
+  background: var(--gold);
+  color: #fffdf7;
+  border-radius: 999px;
+  padding: 5px 13px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.privacy-main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 140px 24px 90px;
+}
+
+.privacy-main .section-title {
+  margin-bottom: 12px;
+}
+
+.privacy-lede {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.privacy-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 48px;
+}
+
+.privacy-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 24px;
+  margin-bottom: 12px;
+}
+
+.privacy-list li strong {
+  font-size: 1.05rem;
+}
+
+.privacy-list li a {
+  color: var(--teal-dark);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.privacy-list li a:hover {
+  text-decoration: underline;
+}
